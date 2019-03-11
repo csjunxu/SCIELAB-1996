@@ -16,8 +16,15 @@
 %
 load images/hats
 load images/hatsCompressed
-
-% 2.  Load the calibration information
+Im = imread('books-2_solux-3500.png');
+rHats = Im(:,:,1);
+gHats = Im(:,:,2);
+bHats = Im(:,:,3);
+Im = imread('books4.png');
+rHatsc = Im(:,:,1);
+gHatsc = Im(:,:,2);
+bHatsc = Im(:,:,3);
+% 2.  Load the calibration information 
 %
 sampPerDeg = 23;
 load displaySPD;
